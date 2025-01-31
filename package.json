@@ -2,9 +2,11 @@
   "name": "echoapp",
   "version": "1.0.0",
   "description": "Echo App",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "test": "mocha --timeout 10000 --exit"
+    "test": "mocha --timeout 10000 --exit",
+    "start": "node server.js",
+    "client": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,9 @@
     "chai-http": "^4.4.0",
     "mocha": "^11.0.1",
     "sinon": "^19.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
   }
 }
